@@ -28,7 +28,8 @@ namespace LancioDadi
         private void txtNumero_Click(object sender, RoutedEventArgs e)
         {
             double a = double.Parse(txtNumero.Text);
-            int crediti = int.Parse(txtCrediti.Text);
+            double crediti = double.Parse(txtCrediti.Text);
+            double puntata = double.Parse(txtPuntata.Text);
             if (a > 6 || a < 1)
             {
                 MessageBox.Show("NON PUOI INSERIRE 0", "ERRORE", MessageBoxButton.OK, MessageBoxImage.Error);
@@ -42,13 +43,13 @@ namespace LancioDadi
                 if (a == b)
                 {
                     txtRisultato.Content = "COMPLIMENTI HAI VINTO";
-                    crediti = crediti + 50;
+                    crediti = (puntata * 2) + crediti;
                     txtCrediti.Text = ($"{crediti}");
                 }
                 else
                 {
                     txtRisultato.Content = "MI DISPIACE HAI PERSO";
-                    crediti = crediti - 50;
+                    crediti = crediti - puntata;
                     txtCrediti.Text = ($"{crediti}");
                     a = 0;
                     b = 0;

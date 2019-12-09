@@ -20,7 +20,7 @@
             </LinearGradientBrush>
         </Grid.Background>
         <Button  Content="Lancia i Dadi" HorizontalAlignment="Left" Margin="235,243,0,0" VerticalAlignment="Top" Width="180" Height="57" FontSize="20" Click="txtNumero_Click" Background="White" FontWeight="Bold"/>
-        <Label Name="txtRisultato" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="300,353,0,0" Width="180" Height="57" Background="White" Foreground="Black"/>
+        <Label Name="txtRisultato" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="300,353,0,0" Width="180" Height="37" Background="White" Foreground="Black"/>
         <TextBox Name="txtNumero" HorizontalAlignment="Left" Height="48" Margin="355,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="85" RenderTransformOrigin="0.5,0.5" FontSize="18" Background="White">
             <TextBox.BorderBrush>
                 <LinearGradientBrush EndPoint="0,20" MappingMode="Absolute" StartPoint="0,0">
@@ -39,8 +39,7 @@
             </TextBox.RenderTransform>
         </TextBox>
         <TextBlock HorizontalAlignment="Left" Margin="235,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="310" Height="35" Background="White" FontSize="20" FontWeight="Bold" Foreground="Black"><Run Background="White" Text="Inserisci un"/><Run Background="White" Text=" Numero"/><Run Background="White" Text=" da 1 a 6"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="35" Width="120" FontSize="22" FontWeight="Bold" Background="White" Foreground="Black" OpacityMask="Black" Text="Crediti"/>
-        <TextBox Name="txtCrediti" HorizontalAlignment="Left" Height="35" Margin="155,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="95" FontSize="22" Background="White" Foreground="Black" Text="1000" IsReadOnly="True">
+        <TextBox Name="txtCrediti" HorizontalAlignment="Left" Height="35" Margin="80,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="95" FontSize="22" Background="White" Foreground="Black" Text="1000" IsReadOnly="True">
             <TextBox.BorderBrush>
                 <LinearGradientBrush EndPoint="0,20" MappingMode="Absolute" StartPoint="0,0">
                     <GradientStop Color="#FFABADB3" Offset="0.05"/>
@@ -50,6 +49,21 @@
             </TextBox.BorderBrush>
         </TextBox>
         <TextBox Name="txtRandom" HorizontalAlignment="Left" Height="50" Margin="452,243,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="85" FontSize="20" IsReadOnly="True"/>
+        <TextBlock HorizontalAlignment="Left" Margin="435,218,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="22" Width="110" FontSize="16" RenderTransformOrigin="0.5,0.5">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.51"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform><Run Text="Numero Uscito"/><LineBreak/><Run/></TextBlock>
+        <TextBox Name="txtPuntata" HorizontalAlignment="Left" Height="35" Margin="10,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="95" FontSize="18"/>
+        <TextBlock HorizontalAlignment="Left" Margin="15,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="35" Width="60" FontSize="18" Foreground="Red"><Run Background="Black" Text="Crediti"/><Run Background="Black" Text=":"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="25" Margin="0,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" Foreground="Red" Text="Fai La Tua Puntata" FontSize="16"/>
+        <Image Margin="15,268,622,30" Source="Image4.png" Stretch="Fill"/>
+        <TextBlock HorizontalAlignment="Left" Height="60" Margin="300,10,0,0" TextWrapping="Wrap" Text="Joker Casinò" VerticalAlignment="Top" Width="210" FontSize="36" Foreground="#FF409C16"/>
+        <Image Margin="562,10,10,295" Source="Image5.png" Stretch="Fill"/>
 
     </Grid>
 </Window>
